@@ -3,6 +3,7 @@
 #include "Savings_Account.h"
 #include "Checking_Account.h"
 #include "Account_Util.h"
+#include "Trust_Account.h"
 
 using namespace std;
 
@@ -47,6 +48,18 @@ int main()
     withdraw(chek_accounts, 2000);
 
     //Trust
+    vector<Trust_Account> trust_accounts;
+    trust_accounts.push_back(Trust_Account{});
+    trust_accounts.push_back(Trust_Account{"Arno"});
+    trust_accounts.push_back(Trust_Account{"Stiven", 4000});
+    trust_accounts.push_back(Trust_Account{"Violet", 6500,4});
+    trust_accounts.push_back(Trust_Account{"Niki", 10000,2,60});
+
+    display(trust_accounts);
+    deposit(trust_accounts, 1000);
+    deposit(trust_accounts, 5000);
+    withdraw(trust_accounts, 2000);
+
     
 
 	return 0;

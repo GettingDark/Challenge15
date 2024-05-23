@@ -12,6 +12,6 @@ private:
 protected:
 	double fee;
 public:
-	Checking_Account(std::string def_name = def_name, double balance = def_balance, double fee = def_fee);
+	Checking_Account(std::string name = def_name, double balance = def_balance, double fee = def_fee);
 	double get_fee() const { return fee; }
 };
